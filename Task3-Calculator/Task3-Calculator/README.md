@@ -5,7 +5,7 @@ A simple yet interactive calculator built using HTML, CSS, and JavaScript.
 Supports basic arithmetic operations with a clean UI.
 
 🌐 **Live Demo**
-👉 https://abhirajsinghrajpoot.github.io/Calculator-App/
+👉 https://abhirajsinghrajpoot.github.io/Calculator/
 
 ---
 
