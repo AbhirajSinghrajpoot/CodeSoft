@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Left {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 12px #d4b5f3;
+}
+
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    background-color: rgba(18, 18, 62, 0.85);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+nav.scrolled {    background-color: rgba(7, 7, 91, 0.196);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(220, 191, 252);
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.leftSection {
+    font-size: 3rem;
+    flex: 1;
+}
+
+.rightSection img {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8a2be2;
+    box-shadow: 0 0 20px #8a2be2;
+}
+
+
+
+.highlight {
+    color: rgb(123, 62, 189);
+}
+
+#element {
+    color: rgb(123, 62, 189);
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: linear-gradient(90deg, #21055e9a, #26025d);
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #1f0248, #10035b);
+}
+
+.secondSection {
+    width: 80%;
+    margin: 60px auto;
+    padding: 10px 0;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #8a2be2;
+    padding-left: 12px;
+}
+
+.secondSection p,
+.secondSection ul li {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.secondSection ul {
+    padding-left: 20px;
+}
+
+.secondSection h3 {
+    font-size: 1.35rem;
+    margin-top: 20px;
+    color: #b48cff;
+}
+
+#contact a {
+    color: #a97bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 90%;
+    margin: 40px auto;
+    border: 0;
+    border-top: 1px solid #333;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: rgb(123, 62, 189);
+    margin: 0 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .firstSection {
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2.4rem;
+    }
+
+    #element {
+        font-size: 1.9rem;
+    }
+
+    .secondSection {
+        width: 90%;
+    }
+}
+
+/* MOBILE NAVBAR + PHONE VIEW */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 10px;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(18, 18, 62, 0.85);
+        backdrop-filter: blur(8px);
+        transition: 0.3s ease;
+    }
+
+    .Left {
+        flex: 1;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: white;
+        margin-left: auto;
+        /* Push to right */
+    }
+
+    .Right ul {
+        flex-direction: column;
+        position: absolute;
+        background: rgb(18, 18, 62);
+        top: 64px;
+        right: 7px;
+        width: 64px;
+        gap: 14px;
+        padding: 23px 26px;
+        border-radius: 27px;
+        display: none;
+        text-align: right;
+        align-items: flex-end;
+        z-index: 999;
+    }
+
+    .Right ul.show {
+        display: flex;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .leftSection {
+        font-size: 1.6rem;
+    }
+
+    #element {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .rightSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection img {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+        display: block;
+    }
+}

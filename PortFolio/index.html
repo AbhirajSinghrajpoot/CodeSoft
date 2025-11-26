@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="Left">
+                <a href="#home" style="text-decoration:none; color:white;">
+                    Wizard's Portfolio
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="Right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                HI, My name is <span class="highlight">Wizard</span>
+
+                <div>and I'm a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button onclick="window.open('asset/Abhiraj_Resume.pdf', '_blank')">
+                        View Resume
+                    </button>
+
+                    <button onclick="window.open('https://github.com/AbhirajSinghrajpoot', '_blank')">
+                        GitHub Profile
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="rightSection">
+                <img src="Wizards.png" alt="bg image">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="secondSection">
+            <h1>About Me</h1>
+            <p>
+                I am a dedicated developer passionate about creating clean, efficient and user-friendly digital
+                experiences. I work across multiple technologies including HTML, CSS, JavaScript, Python and UI/UX
+                design.
+                I enjoy converting ideas into real working projects and continuously improving my skills.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="secondSection">
+            <h1>Skills & Interests</h1>
+            <ul>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Python & Automation</li>
+                <li>Ethical Hacking & Cybersecurity Basics</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="secondSection">
+            <h1>Projects</h1>
+
+            <h3>Tic Tac Toe Game</h3>
+            <p>A fun classic 2-player game built using HTML, CSS & JavaScript.</p>
+
+            <h3>Netflix Clone</h3>
+            <p>A responsive movie browsing UI made using HTML, CSS, and JavaScript.</p>
+
+            <h3>Get Me A Chai – Donation Website</h3>
+            <p>Full-stack web app built with React, Node.js & MongoDB.</p>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="secondSection">
+            <h1>Contact Information</h1>
+            <p>Email: <a href="mailto:abhirajsingh2k5@gmail.com">Email me</a></p>
+            <p>LinkedIn: <a
+                    href="https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/AbhirajSinghrajpoot" target="_blank">GitHub Profile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                &copy; 2024 Wizard's Portfolio. All rights reserved.
+            </div>
+            <div class="footer-second">
+                Follow me on
+                <a href="https://github.com/AbhirajSinghrajpoot">GitHub</a>,
+                <a
+                    href="https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            </div>
+            <div class="footer-third">
+                Contact:
+                <a href="mailto:abhirajsingh2k5@gmail.com">abhirajsingh2k5@gmail.com</a>
+            </div>
+            <div class="footer-fourth">
+                Designed by Wizard
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".Right ul").classList.toggle("show");
+        }
+        document.querySelectorAll(".Right ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".Right ul").classList.remove("show");
+            });
+        });
+
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 10) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Ethical Hacker', 'Tech Enthusiast'],
+            loop: true,
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
