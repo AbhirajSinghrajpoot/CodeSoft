@@ -16,8 +16,7 @@ A modern and visually appealing landing page designed with a clean layout and re
 - Fully Responsive Design
 - Smooth UI & Clean Layout
 - Built Using HTML & CSS
-
-🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/ 
+🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Intership-Page-Website/ 
 
 ---
 
@@ -28,8 +27,8 @@ An interactive calculator supporting basic arithmetic operations.
 - Add, Subtract, Multiply, Divide
 - Clean and responsive button layout
 - Implemented with JavaScript DOM Manipulation
-
-🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Intership-Page-Website/ 
+  
+🔗 Live Demo:  https://abhirajsinghrajpoot.github.io/Calculator/ 
 
 ---
 
@@ -43,8 +42,9 @@ A professional developer portfolio showcasing my skills, projects, resume & cont
 - Resume Download Button
 - Contact Links (GitHub + LinkedIn + Email)
 - Profile Image Glow UI
+  
+🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/ 
 
-🔗 Live Demo:  https://abhirajsinghrajpoot.github.io/Calculator/ 
 
 ---
 
