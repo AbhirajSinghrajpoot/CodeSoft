@@ -30,6 +30,7 @@ An interactive calculator supporting basic arithmetic operations.
 - Implemented with JavaScript DOM Manipulation
 
 🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Intership-Page-Website/ 
+
 ---
 
 ### 💼 Task 3 — Personal Portfolio Website
