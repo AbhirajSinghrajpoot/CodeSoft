@@ -17,8 +17,7 @@ A modern and visually appealing landing page designed with a clean layout and re
 - Smooth UI & Clean Layout
 - Built Using HTML & CSS
 
-🔗 Live Demo: *Add Link Here*  
-📦 Code: `/Landing-Page` folder *(if separate)*
+🔗 Live Demo: https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/ 
 
 ---
 
@@ -31,8 +30,6 @@ An interactive calculator supporting basic arithmetic operations.
 - Implemented with JavaScript DOM Manipulation
 
 🔗 Live Demo: *Add Link Here*  
-📦 Code: `/Calculator` folder
-
 ---
 
 ### 💼 Task 3 — Personal Portfolio Website
@@ -47,7 +44,6 @@ A professional developer portfolio showcasing my skills, projects, resume & cont
 - Profile Image Glow UI
 
 🔗 Live Demo: *Add GitHub Pages Link Here*  
-📦 Code: `/Portfolio` folder
 
 ---
 
@@ -78,7 +74,7 @@ A professional developer portfolio showcasing my skills, projects, resume & cont
 Full-Stack Developer | IoT & Cybersecurity  
 📍 Jabalpur, Madhya Pradesh  
 📧 Email: abhirajsingh2k5@gmail.com  
-🔗 Portfolio: *Add Live Link Here*  
+🔗 Portfolio: (https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/) 
 🔗 GitHub: https://github.com/AbhirajSinghrajpoot  
 🔗 LinkedIn: https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349/
 
