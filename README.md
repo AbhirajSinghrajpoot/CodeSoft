@@ -43,7 +43,7 @@ A professional developer portfolio showcasing my skills, projects, resume & cont
 - Contact Links (GitHub + LinkedIn + Email)
 - Profile Image Glow UI
 
-🔗 Live Demo: *Add GitHub Pages Link Here*  
+🔗 Live Demo:  https://abhirajsinghrajpoot.github.io/Calculator/ 
 
 ---
 
